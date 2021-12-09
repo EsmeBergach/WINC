@@ -1,7 +1,9 @@
 body {
   background-color: #424242;
 }
-
+a:link {
+  color: white;
+}
 a:visited {
   color: white;
   background-color: transparent;
@@ -16,15 +18,15 @@ a:visited {
   padding-right: 5px;
   padding-bottom: 0px;
   padding-left: 5px;
-  margin: 0 auto;
   text-align: center;
+}
+.nav_padding {
+  padding: 0;
 }
 .navigation {
   font: normal 20px Verdana, Helvetica, Tahoma;
   color: white;
   list-style-type: none;
-  margin: 0 auto;
-  padding: 0px;
 }
 .navigation li {
   display: inline;
@@ -35,11 +37,12 @@ a:visited {
 .style-main-1 {
   font: normal 16px Verdana, Helvetica, Tahoma;
   color: #cccccc;
-  margin: 0 auto;
 }
 .style-main-2 {
   font: bold 20px Verdana, Helvetica, Tahoma;
   color: #fddae5;
+  margin: 5px;
+  padding: 0px;
 }
 .style-main-2 a:visited {
   color: rgb(162, 45, 167);
@@ -50,7 +53,7 @@ hr.style-one {
   background: #4b4b4e;
 }
 .footer {
-  background-color: #262626;
+  background-color: #424242;
   color: #fddae5;
   font: italic bold 10px Tahoma, Helvetica, Verdana;
   border: solid 2px #fddae5;
