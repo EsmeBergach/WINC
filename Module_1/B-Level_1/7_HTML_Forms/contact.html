@@ -12,35 +12,34 @@
     </header>
     <main>
         <nav>
-            <nav>
-                <ul class="nav_padding">
-                    <div class="navigation">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="projects.html">PROJECTS</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                    </div>
-                </ul>
-                <form>
-                    <form name="contactform" data-netlify="true">
-                        <p>
-                            <label for="name">Name</label>
-                            <input type="text" name="name" /> <br><br>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email"><br><br>
-                            <label for="textarea"></label>
-                            <textarea rows="10" cols="26"></textarea><br><br>
-                            <label for="submit"></label>
-                            <input type="submit" value="Send">
-                        </p>
-                        <hr class="style-one" />
-                        <div class="style-main-1">
-                            <p>Contact Info</p>
-                        </div>
-                        <br />
-                        <hr class="style-one" />
-            </nav>
+            <ul class="nav_padding">
+                <div class="navigation">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </div>
+            </ul>
+            <form name="contactform" method="POST" data-netlify="true">
+                <p>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" /> <br><br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="textarea"></label>
+                    <textarea rows="10" cols="26"></textarea><br><br>
+                    <label for="submit"></label>
+                    <input type="submit" value="Send">
+                </p>
+                <hr class="style-one" />
+                <div class="style-main-1">
+                    <p>Contact Info</p>
+                </div>
+                <br />
+                <hr class="style-one" />
+
             </form>
+        </nav>
     </main>
     <hr class="style-one" />
     <footer class="footer">
