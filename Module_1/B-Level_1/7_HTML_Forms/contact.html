@@ -2,40 +2,41 @@
 <html>
 
 <head>
-    <title>CONTACT</title>
+    <title>ABOUT</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
 <body>
     <header class="top_header">
-        <h1>CONTACT</h1>
+        <h1>ABOUT ME</h1>
     </header>
     <main>
         <nav>
-            <ul class="nav_padding">
-                <div class="navigation">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="projects.html">PROJECTS</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </div>
-            </ul>
+            <div class="navigation">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </div>
+            <p>
+            <h2> Send Us Your Favourite Recipe</h2>
+            </p>
             <form name="contactform" method="POST" data-netlify="true">
-                <p>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" /> <br><br>
-                    <label for="email">Email</label>
-                    <input type="email" name="email"><br><br>
-                    <label for="name">Mobile</label>
-                    <input type="tel" name="mobile"><br><br>
-                    <label for="age">Age</label>
-                    <input type="number" name="age" min="0" max="120">
-                    <label for="birthday">Date of Birth</label>
-                    <input type="date" name="birthday"><br><br>
-                    <input type="radio" name="gender" value="Male">
-                    <label for="male">Male</label><br>
-                    <input type="radio" name="gender" value="Female">
-                    <label for="female">Female</label><br>
+
+                <label for="name">Name</label>
+                <input type="text" name="name" required /> <br><br>
+                <label for="email">Email</label>
+                <input type="email" name="email"><br><br>
+                <label for="name">Mobile</label>
+                <input type="tel" name="mobile"><br><br>
+                <label for="age">Age</label>
+                <input type="number" name="age" min="0" max="120">
+                <label for="birthday">Date of Birth</label>
+                <input type="date" name="birthday"><br><br>
+                <input type="radio" name="gender" value="Male">
+                <label for="male">Male</label><br>
+                <input type="radio" name="gender" value="Female">
+                <label for="female">Female</label><br>
                 <p>Cuisine</p>
                 <input type="checkbox" name="french">
                 <label for="french"> French</label><br>
@@ -59,13 +60,6 @@
                 <input type="reset" value="Reset">
 
 
-
-
-                </p>
-                <hr class="style-one" />
-                <div class="style-main-1">
-                    <p>Contact Info</p>
-                </div>
                 <br />
                 <hr class="style-one" />
             </form>
