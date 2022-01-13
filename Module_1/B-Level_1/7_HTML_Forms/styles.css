@@ -62,13 +62,17 @@ hr.style-one {
   margin: 0 auto;
 }
 
+.blogpost {
+  width: 10px;
+  border: 1 px solid black;
+}
+body {
+  background-color: #8f8f8f;
+}
+
 @media screen and (min-width: 1024px) {
   .style-main-1 {
     font: normal 10px Verdana, Helvetica, Tahoma;
     line-height: 200%;
     color: #0a0a0a;
   }
-  body {
-    background-color: #8f8f8f;
-  }
-}
