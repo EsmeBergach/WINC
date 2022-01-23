@@ -6,13 +6,12 @@ body {
   display: grid;
   height: 100vh;
   grid-gap: 0.1em;
-  grid-template-columns: 1fr 0.5fr 1fr 1fr;
-  grid-template-rows: 1fr 1.5fr 1.2fr 0.3fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.7fr 1fr 0.3fr;
   grid-template-areas:
-    "sh sm sm sm"
-    "sh sm sm sm"
-    "sh wa wa wa"
-    "sh sf sf sf";
+    "sh sm"
+    "sh wa"
+    "sh sf";
 }
 
 .site-header {
@@ -33,7 +32,7 @@ body {
   grid-area: sf;
 }
 
-@media only screen and (max-width: 200px) {
+@media only screen and (max-width: 500px) {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr;
@@ -42,5 +41,12 @@ body {
       "sm"
       "wa"
       "sf";
+  }
+}
+@media only screen and (min-width: 800px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "sh sm wa";
   }
 }
