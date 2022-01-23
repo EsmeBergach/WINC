@@ -1,75 +1,46 @@
 body {
-  background: grey;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: grey;
 }
+
 .container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(100px, auto);
+  height: 100vh;
+  grid-gap: 0.1em;
+  grid-template-columns: 1fr 0.5fr 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr 1.2fr 0.3fr;
   grid-template-areas:
-    "sh"
-    "sm"
-    "sa"
-    "sf";
+    "sh sm sm sm"
+    "sh sm sm sm"
+    "sh wa wa wa"
+    "sh sf sf sf";
 }
+
 .site-header {
-  background-color: lightblue;
+  background-color: aqua;
   grid-area: sh;
 }
+
 .site-main {
   background-color: green;
   grid-area: sm;
 }
-.site-area {
-  background-color: blueviolet;
-  grid-area: sa;
+.widget-area {
+  background-color: rgb(84, 231, 170);
+  grid-area: wa;
 }
 .site-footer {
-  background-color: darkblue;
+  background-color: rgb(76, 76, 156);
   grid-area: sf;
 }
 
-@media (max-width: 400px) {
+@media only screen and (max-width: 200px) {
   .container {
-    grid-template-columns: 1fr
-    grid-template-areas:
-      "sh sh sh sh"
-      "sm sm sm sm"
-      "sm sm sm sm"
-      "sm sm sm sm"
-      "sm sm sm sm"
-      "sm sm sm sm"
-      "sm sm sm sm"
-      "sa sa sa sa"
-      "sa sa sa sa"
-      "sa sa sa sa"
-      "sa sa sa sa"
-      "sf sf sf sf";
-  }
-
-
-/* 
-@media screen and (max-width: 400px) {
-  .text h1 {
-    color: rgb(212, 176, 99);
-  } */
-
-/* .container {
+    grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr;
-    height: 640px;
-    width: 360px;
-    grid-gap: 0.3em;
-  } 
+    grid-template-areas:
+      "sh"
+      "sm"
+      "wa"
+      "sf";
+  }
 }
- @media only screen and (max-width: 1000px) {
-  .text h1 {
-    color: rgb(99, 212, 123);
-  }
-  .mobile-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 640px;
-    width: 360px;
-    grid-gap: 0.3em;
-  }
-} */
