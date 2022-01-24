@@ -15,7 +15,7 @@ body {
     "sf";
 }
 
-.site-nav {
+.nav-links {
   background-color: aqua;
   grid-area: sh;
 }
@@ -29,7 +29,7 @@ body {
   grid-area: wa;
 }
 .site-footer {
-  background-color: rgb(76, 76, 156);
+  background-color: rgb(44, 44, 44);
   grid-area: sf;
 }
 
