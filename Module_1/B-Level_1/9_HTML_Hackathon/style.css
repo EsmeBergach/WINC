@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  background-color: rgb(110, 108, 108);
+  background-color: rgb(255, 255, 255);
 }
 
 li,
@@ -34,7 +34,7 @@ header {
 }
 
 .nav-menu li a:hover {
-color:black
+  color: black;
 }
 
 .logo {
@@ -44,31 +44,31 @@ color:black
 button {
   cursor: pointer;
   padding: 9px 25px;
+  color: rgb(19, 18, 18);
   background-color: #81a05a;
   border: none;
   border-radius: 8px;
   transition: all 0.3s ease 0s;
 }
-
 button:hover {
+  color: black;
   background-color: #9dc26f;
 }
 
 .container {
   display: grid;
   height: 100vh;
-  grid-gap: 0.1em;
   grid-template-columns: 1fr;
   grid-template-rows: 0.2fr 0.5fr 1fr 0.4fr;
   grid-template-areas:
     "sh"
     "sb"
-    "wa"
+    "sm"
     "sf";
 }
 
 .site-banner {
-  background-color: rgb(224, 200, 118);
+  background-color: #c4c4c4;
   grid-area: sb;
 }
 .site-main {
@@ -86,8 +86,42 @@ button:hover {
     grid-template-rows: 0.1fr 0.4fr 1fr 0.2fr;
     grid-template-areas:
       "sh"
+      "sb"
       "sm"
-      "wa"
       "sf";
+  }
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggle {
+  }
+  .bars {
+    background: rgb(0, 0, 0);
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+    border-radius: 4px;
+  }
+  .bars::before,
+  .bars::after {
+    background: rgb(0, 0, 0);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+    border-radius: 8px;
+  }
+  .bars::before {
+    top: 5px;
+  }
+
+  .bars::after {
+    top: -5px;
   }
 }
