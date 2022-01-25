@@ -1,5 +1,57 @@
-body {
-  background-color: grey;
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: rgb(110, 108, 108);
+}
+
+li,
+a,
+button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(19, 18, 18);
+  text-decoration: none;
+  list-style: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+.nav-menu li {
+  display: inline-block;
+  padding: 0em 1.5em;
+}
+.nav-menu li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-menu li a:hover {
+color:black
+}
+
+.logo {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  padding: 9px 25px;
+  background-color: #81a05a;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: #9dc26f;
 }
 
 .container {
@@ -10,23 +62,18 @@ body {
   grid-template-rows: 0.2fr 0.5fr 1fr 0.4fr;
   grid-template-areas:
     "sh"
-    "sm"
+    "sb"
     "wa"
     "sf";
 }
 
-.nav-links {
-  background-color: aqua;
-  grid-area: sh;
-}
-
 .site-banner {
   background-color: rgb(224, 200, 118);
-  grid-area: sm;
+  grid-area: sb;
 }
-.widget-area {
+.site-main {
   background-color: rgb(84, 231, 170);
-  grid-area: wa;
+  grid-area: sm;
 }
 .site-footer {
   background-color: rgb(44, 44, 44);
