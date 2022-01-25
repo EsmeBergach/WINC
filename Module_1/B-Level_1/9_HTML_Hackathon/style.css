@@ -15,7 +15,7 @@ button {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: rgb(19, 18, 18);
+  color: black;
   text-decoration: none;
   list-style: none;
 }
@@ -34,7 +34,7 @@ header {
 }
 
 .nav-menu li a:hover {
-  color: black;
+  color: rgb(68, 68, 68);
 }
 
 .logo {
@@ -72,7 +72,7 @@ button:hover {
   grid-area: sb;
 }
 .site-main {
-  background-color: rgb(84, 231, 170);
+  background-color: rgb(75, 75, 75);
   grid-area: sm;
 }
 .site-footer {
@@ -90,16 +90,36 @@ button:hover {
       "sm"
       "sf";
   }
-  header {
+  .menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
-
-  .toggle {
+  .logo {
+    flex: 1;
   }
+
+  .login-button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  .toggle {
+    order: 2;
+  }
+  nav {
+    order: 3;
+  }
+  .nav-menu {
+    width: 100%;
+    text-align: center;
+    order: 4;
+    display: none;
+  }
+
   .bars {
+    cursor: pointer;
     background: rgb(0, 0, 0);
     display: inline-block;
     height: 2px;
@@ -123,5 +143,21 @@ button:hover {
 
   .bars::after {
     top: -5px;
+  }
+
+  li,
+  a,
+  button {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+  }
+  button {
+    background-color: #81a05a;
+    padding: 4px 10px;
+    border-radius: 10px;
   }
 }
