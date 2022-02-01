@@ -17,7 +17,7 @@
   grid-template-rows: 0.1fr 1fr 0.3fr;
   grid-template-areas:
     "sb"
-    "sm"
+    "sg"
     "sf";
 }
 
@@ -88,9 +88,28 @@ header {
   color: #81a05a;
   font-weight: bold;
 }
-.site-main {
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 100px 300px;
+  grid-gap: 10px;
+  grid-area: sg;
+}
+.site-gallery {
   background-color: rgb(75, 75, 75);
-  grid-area: sm;
+  text-align: center;
+}
+.gallery-grid {
+  padding: 0 4px;
+}
+.text-grid {
+  font-family: "Poppins", sans-serif;
+  justify-content: space-between;
+}
+.gallery-menu {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
 }
 .site-footer {
   background-color: rgb(44, 44, 44);
