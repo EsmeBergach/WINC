@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,6 +8,17 @@
   padding: 0;
   text-decoration: none;
   background-color: rgb(255, 255, 255);
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1fr 0.3fr;
+  grid-template-areas:
+    "sb"
+    "sm"
+    "sf";
 }
 
 li,
@@ -25,6 +37,67 @@ header {
   align-items: center;
   padding: 1em 2em;
 }
+.site-banner {
+  grid-area: sb;
+}
+.site-banner .banner {
+  display: flex;
+  border-radius: 5px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 5px 10px #0005;
+  overflow: hidden;
+ 
+}
+.site-banner .banner .image-banner {
+  position:relative;
+  bottom:-5px;
+}
+.site-banner .banner .image-banner img {
+  width: 100%;
+}
+.site-banner .banner .content-banner {
+  flex: 1 1 250px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.site-banner .banner .content-banner .button-shop{
+  display:block;
+  height:40px;
+  width:150px;
+  line-height:40px;
+  background:#fff;
+  margin:5px auto;
+}
+
+.button-shop {
+padding: 10px 0px;
+}
+.content-banner {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+  margin: 0;
+  letter-spacing: 0.5px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.text-banner {
+  font-family: "Poppins", sans-serif;
+  color: #81a05a;
+  font-weight: bold;
+}
+.site-main {
+  background-color: rgb(75, 75, 75);
+  grid-area: sm;
+}
+.site-footer {
+  background-color: rgb(44, 44, 44);
+  grid-area: sf;
+}
+
 .nav-menu li {
   display: inline-block;
   padding: 0em 1.5em;
@@ -36,9 +109,18 @@ header {
 .nav-menu li a:hover {
   color: rgb(68, 68, 68);
 }
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
-.logo {
-  cursor: pointer;
+.text-logo {
+  font-family: "Love Ya Like A Sister", sans-serif;
+  font-weight: lighter;
+  font-size: 37px;
+  color: #79aa8d;
 }
 
 button {
@@ -50,114 +132,84 @@ button {
   border-radius: 8px;
   transition: all 0.3s ease 0s;
 }
+
 button:hover {
   color: black;
   background-color: #9dc26f;
 }
-
-.container {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 0.5fr 1fr 0.4fr;
-  grid-template-areas:
-    "sh"
-    "sb"
-    "sm"
-    "sf";
+.button-login {
+  width: auto;
+  order: 1;
+  display: block;
+}
+.toggle {
+  order: 2;
+}
+nav {
+  order: 3;
+}
+.nav-menu {
+  width: 100%;
+  text-align: center;
+  order: 4;
+  display: none;
 }
 
-.site-banner {
-  background-color: #c4c4c4;
-  grid-area: sb;
+.bars {
+  cursor: pointer;
+  background: rgb(0, 0, 0);
+  display: inline-block;
+  height: 2.5px;
+  position: relative;
+  width: 18px;
+  border-radius: 4px;
 }
-.site-main {
-  background-color: rgb(75, 75, 75);
-  grid-area: sm;
+.bars::before,
+.bars::after {
+  background: rgb(0, 0, 0);
+  content: "";
+  display: inline-block;
+  height: 2.5px;
+  position: absolute;
+  width: 18px;
+  border-radius: 8px;
 }
-.site-footer {
-  background-color: rgb(44, 44, 44);
-  grid-area: sf;
+.bars::before {
+  top: 6px;
 }
 
-@media only screen and (max-width: 500px) {
+.bars::after {
+  top: -5px;
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) {
   .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.4fr 1fr 0.2fr;
-    grid-template-areas:
-      "sh"
-      "sb"
-      "sm"
-      "sf";
   }
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .logo {
-    flex: 1;
-  }
-
-  .login-button {
-    width: auto;
-    order: 1;
-    display: block;
-  }
-  .toggle {
-    order: 2;
+  header {
+    padding: 1em 1.5em;
   }
   nav {
-    order: 3;
+    order: 1;
   }
-  .nav-menu {
-    width: 100%;
-    text-align: center;
-    order: 4;
+  .bars {
     display: none;
   }
 
-  .bars {
-    cursor: pointer;
-    background: rgb(0, 0, 0);
-    display: inline-block;
-    height: 2px;
-    position: relative;
-    width: 18px;
-    border-radius: 4px;
+  .nav-menu {
+    display: unset;
   }
-  .bars::before,
-  .bars::after {
-    background: rgb(0, 0, 0);
-    content: "";
-    display: inline-block;
-    height: 2px;
-    position: absolute;
-    width: 18px;
-    border-radius: 8px;
+  
+  .site-banner .banner .image-banner {
+    flex: 1 1 250px;
   }
-  .bars::before {
-    top: 5px;
+  .content-banner {
+    font-size: 70px;
   }
+  .container {
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1fr 0.3fr;
+}
 
-  .bars::after {
-    top: -5px;
-  }
-
-  li,
-  a,
-  button {
-    font-family: "Oswald", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: black;
-    text-decoration: none;
-    list-style: none;
-  }
-  button {
-    background-color: #81a05a;
-    padding: 4px 10px;
-    border-radius: 10px;
   }
 }
