@@ -109,80 +109,6 @@ header {
   text-align: center;
 }
 
-.footer {
-  background-color: rgb(44, 44, 44);
-  grid-area: sf;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-.footer-col {
-  width: 25%;
-  padding: 0 15px;
-}
-.footer-col h1,
-h3,
-h4 {
-  font-family: "Poppins", sans-serif;
-  color: #c2c2c2;
-}
-.footer-col li {
-  font-family: "Poppins", sans-serif;
-  color: #c2c2c2;
-}
-
-.footer-top {
-  padding: 70px 50px;
-}
-.social-icons {
-  color: #c2c2c2;
-}
-
-.footer-bottom {
-  padding: 10px;
-  background-color: red;
-}
-
-.logo-footer h1 {
-  color: #c2c2c2;
-}
-
-.text-logo-footer {
-  font-family: "Love Ya Like A Sister", sans-serif;
-  font-weight: lighter;
-  font-size: 37px;
-  color: #79aa8d;
-}
-
-/* .footer-col li {
-  font-family: "Poppins", sans-serif;
-  background-color: rgb(44, 44, 44);
-  font-size: normal;
-  font-weight: lighter;
-  color: white;
-}
-
-h4 {
-  font-family: "Poppins", sans-serif;
-  background-color: rgb(44, 44, 44);
-  color: white;
-}
-
-.footer-col h1,
-.footer-col h3,
-.logo-footer h1 .footer {
-  font-family: "Poppins", sans-serif;
-  background-color: rgb(44, 44, 44);
-  font-size: normal;
-  font-weight: lighter;
-  color: white;
-}
-
-.social-links {
-  background-color: rgb(44, 44, 44);
-} */
-
 button {
   cursor: pointer;
   padding: 9px 25px;
@@ -299,5 +225,53 @@ button:hover {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 1fr 0.3fr;
+  }
+
+  .footer {
+    background-color: rgb(44, 44, 44);
+    grid-area: sf;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+    font-size: 16px;
+  }
+  .footer-col h1,
+  h3,
+  h4 {
+    font-family: "Poppins", sans-serif;
+    color: #c2c2c2;
+  }
+  .footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .footer-col li {
+    font-family: "Poppins", sans-serif;
+    color: #c2c2c2;
+  }
+
+  .footer-top {
+    padding: 50px 25px;
+  }
+
+  .social-icons {
+    color: #c2c2c2;
+  }
+
+  .footer-bottom {
+    padding: 10px;
+    background-color: red;
+  }
+
+  .text-logo-footer {
+    font-family: "Love Ya Like A Sister", sans-serif;
+    font-weight: lighter;
+    font-size: 37px;
+    color: #79aa8d;
   }
 }
