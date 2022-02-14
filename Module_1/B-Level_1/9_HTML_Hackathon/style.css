@@ -15,6 +15,7 @@ body {
   grid-template-areas:
     "sb"
     "gc"
+    "nl"
     "sf";
 }
 
@@ -37,9 +38,10 @@ header {
   order: 0;
   gap: 2em;
 }
-
+.container {
+  width: 100%;
+}
 .site-banner .banner {
-  display: flex;
   border-radius: 5px;
   margin: 10px;
   flex-wrap: wrap;
@@ -133,12 +135,15 @@ button:hover {
 }
 
 .container-header {
+  width: 100%;
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .logo-header {
+  display: grid;
+  justify-content: center;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -159,20 +164,21 @@ button:hover {
   gap: 1em;
   order: 2;
 }
-
-.newsletter {
+.news-container {
   display: block;
-  float: center;
+  position: relative;
   margin-bottom: 1em;
   margin-top: 1em;
   padding: 16px;
+  grid-area: nl;
 }
 
-.news-image {
-  width: 100%;
+.news-image img {
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
+  width: 100%;
   border-radius: 1em;
-  position: relative;
 }
 .news-text {
   position: absolute;
@@ -248,15 +254,21 @@ p {
 /* Media Query for Laptops and Desktops */
 @media (min-width: 700px) {
   header {
-    padding: 1em 1.5em;
+    padding: 0em 8.5em;
   }
-
   .container-header {
     display: flex;
   }
 
+  .container {
+    width: 85%;
+    margin: auto;
+  }
+  .logo-header {
+    justify-content: start;
+  }
   .navbar {
-    justify-content: center;
+    float: right;
   }
   .navbar li {
     display: inline-block;
@@ -289,6 +301,9 @@ p {
   .newsletter-image {
     width: 100%;
     margin: 10px;
+  }
+  .footer {
+    width: 100%;
   }
   .footer-top {
     display: flex;
