@@ -35,6 +35,7 @@ header {
 .top-header {
   margin: 10px;
   order: 0;
+  gap: 2em;
 }
 .site-banner .banner {
   display: flex;
@@ -58,8 +59,7 @@ header {
 }
 
 .site-banner .banner .content-banner {
-  flex: 1 1 250px;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -82,7 +82,9 @@ header {
   font-weight: normal;
   margin: 0;
   letter-spacing: 0.5px;
-  background: rgba(255, 255, 255, 0.5);
+}
+.content-banner p {
+  color: black;
 }
 .text-banner {
   font-family: "Poppins", sans-serif;
@@ -181,6 +183,72 @@ button:hover {
   top: -5px;
 }
 
+.footer {
+  background-color: rgb(44, 44, 44);
+  grid-area: sf;
+}
+.footer-top {
+  padding: 50px 25px;
+}
+
+.footer-col {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.footer-col h1,
+h3,
+h4,
+p {
+  font-family: "Poppins", sans-serif;
+  color: #c2c2c2;
+}
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.footer-col li {
+  font-family: "Poppins", sans-serif;
+  color: #c2c2c2;
+  cursor: pointer;
+}
+.footer-col p {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.social-mail {
+  display: none;
+}
+.footer-logo {
+  color: white;
+}
+
+.social-icons {
+  display: inline-block;
+  width: 30px;
+  color: #c2c2c2;
+  line-height: 20px;
+  justify-content: center;
+}
+
+.text-logo-footer {
+  font-family: "Love Ya Like A Sister", sans-serif;
+  font-weight: lighter;
+  font-size: 37px;
+  color: #79aa8d;
+}
+
+.footer-hr {
+  border: 1px solid #c2c2c2;
+}
+.footer-bottom {
+  font-family: "Poppins", sans-serif;
+  color: #c2c2c2;
+  font-size: 16px;
+  padding: 10px;
+  background-color: rgb(44, 44, 44);
+}
 /* Media Query for Laptops and Desktops */
 @media (min-width: 700px) {
   header {
@@ -227,10 +295,6 @@ button:hover {
     grid-template-rows: 0.1fr 1fr 0.3fr;
   }
 
-  .footer {
-    background-color: rgb(44, 44, 44);
-    grid-area: sf;
-  }
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -239,39 +303,14 @@ button:hover {
     width: 25%;
     padding: 0 15px;
     font-size: 16px;
+    align-items: center;
+    word-wrap: break-word;
   }
-  .footer-col h1,
-  h3,
-  h4 {
-    font-family: "Poppins", sans-serif;
-    color: #c2c2c2;
-  }
-  .footer-col h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-  }
-  .footer-col li {
-    font-family: "Poppins", sans-serif;
-    color: #c2c2c2;
-  }
-
   .footer-top {
-    padding: 50px 25px;
+    justify-content: ;
   }
-
-  .social-icons {
+  .social-mail {
+    display: inline-block;
     color: #c2c2c2;
-  }
-
-  .footer-bottom {
-    padding: 10px;
-    background-color: red;
-  }
-
-  .text-logo-footer {
-    font-family: "Love Ya Like A Sister", sans-serif;
-    font-weight: lighter;
-    font-size: 37px;
-    color: #79aa8d;
   }
 }
