@@ -66,10 +66,31 @@ header {
   float: right;
 }
 
-.site-banner .banner .button-shop {
+.site-banner .banner {
   display: block;
   margin-bottom: 2em;
   margin-top: 2em;
+}
+
+.button-shop {
+  display: block;
+  margin-top: 2em;
+  margin-left: 0.5em;
+}
+
+button {
+  cursor: pointer;
+  padding: 2px 6px;
+  color: rgb(19, 18, 18);
+  background-color: #81a05a;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  color: black;
+  background-color: #9dc26f;
 }
 
 .content-banner {
@@ -85,6 +106,7 @@ header {
 .content-banner p {
   color: black;
   font-size: 1.3rem;
+  margin-left: 0.5em;
 }
 .text-banner {
   font-family: "Poppins", sans-serif;
@@ -117,21 +139,6 @@ header {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   text-align: center;
-}
-
-button {
-  cursor: pointer;
-  padding: 9px 25px;
-  color: rgb(19, 18, 18);
-  background-color: #81a05a;
-  border: none;
-  border-radius: 8px;
-  transition: all 0.3s ease 0s;
-}
-
-button:hover {
-  color: black;
-  background-color: #9dc26f;
 }
 
 .container-header {
@@ -291,6 +298,10 @@ p {
   .image-banner img {
     height: auto;
     width: 70%;
+  }
+
+  button {
+    padding: 9px 25px;
   }
 
   .gallery-container {
