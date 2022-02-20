@@ -9,55 +9,86 @@
   text-decoration: none;
   list-style: none;
 }
-
-body {
-  display: grid;
-  grid-template-areas:
-    "sb"
-    "gc"
-    "nl"
-    "vp"
-    "sf";
-}
-
 li,
-a,
 button {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: black;
 }
+
+li {
+  text-align: -webkit-match-parent;
+  color: black;
+}
+
 header {
-  display: flex;
+  display: inline-block;
   justify-content: space-between;
   align-items: center;
   padding: 1em 2em;
 }
+
+main {
+  display: block;
+}
+
+.container {
+  width: 100%;
+}
+
 .top-header {
   margin: 10px;
   order: 0;
   gap: 2em;
 }
-.container {
-  width: 100%;
+
+.logo-header {
+  display: block;
+  justify-content: center;
+  margin-bottom: 10px;
+  text-align: center;
 }
+.logo-header h1 {
+  font-size: 45px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+.text-logo {
+  font-family: "Love Ya Like A Sister", sans-serif;
+  font-weight: lighter;
+  font-size: 50px;
+  color: #79aa8d;
+}
+nav {
+  display: block;
+}
+.navbar {
+  text-align: center;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-top: 20px;
+}
+.nav-link {
+  color: black;
+  font-size: 25px;
+}
+
 .site-banner {
-  display: flex;
-  border-radius: 5px;
-  margin: 10px;
+  display: inline-block;
   flex-wrap: wrap;
+  border-radius: 1em;
+  width: 100%;
   box-shadow: 0 5px 10px #0005;
   max-height: 400px;
   overflow: hidden;
-  grid-area: sb;
 }
 
 .image-banner {
   position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: flex-end;
 }
 .image-banner img {
   height: 50%;
@@ -66,19 +97,15 @@ header {
 }
 
 .content-banner {
-  font-family: "Poppins", sans-serif;
   font-weight: normal;
   text-align: left;
-  text-transform: uppercase;
   letter-spacing: 0.1px;
-  position: absolute;
-  padding: 10px;
+  margin: 2em 0em 1em 2em;
 }
 
 .content-banner p {
   color: black;
   font-size: 1.3rem;
-  margin-left: 0.5em;
 }
 
 .button-shop {
@@ -109,14 +136,6 @@ button:hover {
   font-weight: bold;
 }
 
-.gallery-container {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr;
-  gap: 1em;
-  padding: 1em;
-  grid-area: gc;
-}
 .discover h1 {
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -126,52 +145,71 @@ button:hover {
   padding: 30px;
 }
 
+.gallery-wrapper {
+  display: grid;
+  box-sizing: border-box;
+  grid-gap: 10px;
+  padding: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr;
+  grid-template-areas:
+    "a b"
+    "c d";
+}
+
 .gallery-image {
-  width: 100%;
+  max-height: 200px;
+  width: auto;
+  object-fit: cover;
+}
+
+.gallery-item-a {
+  align-self: center;
+  justify-self: center;
+  grid-area: a;
+}
+
+.gallery-item-b {
+  align-self: center;
+  justify-self: center;
+  grid-area: b;
+}
+
+.gallery-item-c {
+  align-self: center;
+  justify-self: center;
+  grid-area: c;
+}
+.gallery-item-d {
+  align-self: center;
+  justify-self: center;
+  grid-area: d;
+}
+
+.stars-grid {
+  margin-top: 1em;
+}
+.checked {
+  color: rgb(255, 197, 89);
+}
+.text-grid {
+  font-family: "Poppins", sans-serif;
+}
+.price-grid {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
 }
 
 .text-grid {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  text-align: center;
 }
 
-.container-header {
-  width: 100%;
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.logo-header {
-  display: grid;
-  justify-content: center;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.logo-header h1 {
-  font-size: 45px;
-}
-
-.text-logo {
-  font-family: "Love Ya Like A Sister", sans-serif;
-  font-weight: lighter;
-  font-size: 50px;
-  color: #79aa8d;
-}
-
-.navbar {
-  justify-content: center;
-  display: flex;
-  gap: 1em;
-  order: 2;
-}
 .news-container {
   display: flex;
   justify-content: center;
   margin: 3em 0em;
   width: 100%;
-  grid-area: nl;
 }
 
 .news-page {
@@ -214,43 +252,48 @@ button:hover {
 .visit-container {
   overflow: hidden;
   background-color: #e4e9e2;
-  /* height: 250px; */
+  height: 250px;
   width: 100%;
-  grid-area: vp;
 }
 .visit-page {
   position: relative;
 }
 .visit-text {
+  display: inline-block;
   position: absolute;
-  text-align: left;
-  margin-left: 15em;
+  text-align: center;
+  margin-left: 3em;
   margin-top: 4em;
+}
+.visit-text p {
+  color: black;
 }
 
 .visit-images {
+  position: relative;
 }
 
 .visit-profile {
-  position: absolute;
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+  margin: 0em 2em;
 }
 
 .visit-profile img {
-  width: 50%;
-  height: 50%;
   border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 .visit-image {
-  display: flex;
-  float: right;
+  display: none;
 }
 
 .footer {
   width: 100%;
   margin-top: 1em;
   background-color: rgb(44, 44, 44);
-  grid-area: sf;
 }
 .footer-top {
   display: block;
@@ -316,20 +359,22 @@ p {
   background-color: rgb(44, 44, 44);
 }
 /* Media Query for Laptops and Desktops */
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   header {
-    padding: 0em 8.5em;
-  }
-  .container-header {
-    display: flex;
+    padding: 2em 0.8em 0.5em 0.8em;
+    display: grid;
+    grid-auto-flow: column;
   }
 
   .container {
     width: 85%;
     margin: auto;
   }
+
   .logo-header {
-    justify-content: start;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
   }
   .navbar {
     float: right;
@@ -349,6 +394,7 @@ p {
   .content-banner p {
     font-size: 2.8rem;
   }
+
   .site-banner {
     max-height: 400px;
   }
@@ -362,10 +408,11 @@ p {
     font-size: 20px;
   }
 
-  .gallery-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1em;
-  }
+  /* .gallery-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+  } */
+
   .news-page {
     width: 800px;
   }
@@ -382,9 +429,14 @@ p {
     height: 100%;
   }
 
-  .footer {
-    width: 100%;
+  .visit-image {
+    display: flex;
+    float: right;
   }
+  .visit-image img {
+    height: 250px;
+  }
+
   .footer-top {
     display: flex;
     margin-top: 2em;
