@@ -16,7 +16,6 @@ button {
   font-size: 16px;
   color: black;
 }
-
 li {
   text-align: -webkit-match-parent;
   color: black;
@@ -42,11 +41,9 @@ main {
   order: 0;
   gap: 2em;
 }
-
 .logo-header {
   display: block;
   justify-content: center;
-
   margin-bottom: 10px;
   text-align: center;
 }
@@ -55,87 +52,82 @@ main {
   font-family: "Poppins", sans-serif;
   color: black;
 }
-
 .text-logo {
   font-family: "Love Ya Like A Sister", sans-serif;
   font-weight: lighter;
   font-size: 50px;
   color: #79aa8d;
 }
+
 nav {
   display: block;
 }
 .navbar {
   text-align: center;
 }
-
 .nav-item {
   display: inline-block;
   margin-top: 10px;
 }
 .nav-link {
   color: black;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0px 10px 0px 10px;
 }
 
-.site-banner {
-  display: inline-block;
-  flex-wrap: wrap;
+.banner-wrapper {
+  display: block;
+  position: relative;
+  overflow: hidden;
   border-radius: 1em;
   width: 100%;
-  max-height: 350px;
+  height: 200px;
   box-shadow: 0 5px 10px #0005;
-  overflow: hidden;
 }
-
-.image-banner {
-  position: relative;
+.banner-image {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
-.image-banner img {
+.banner-image img {
+  margin: 10px 0px 0px 10px;
   height: 50%;
   width: 50%;
   float: right;
 }
-
 .content-banner {
   font-weight: normal;
   text-align: left;
   letter-spacing: 0.1px;
   margin: 2em 0em 1em 2em;
 }
-
 .content-banner p {
   color: black;
   font-size: 30px;
 }
-
+.text-banner {
+  font-family: "Poppins", sans-serif;
+  color: #81a05a;
+  font-weight: bold;
+}
 .button-shop {
   display: flex;
-  margin-top: 2em;
-  margin-left: 0.5em;
+  margin: 10px 0px 0px 0px;
 }
 
 button {
   cursor: pointer;
-  font-size: 16px;
-  padding: 2px 8px;
+  font-size: 20px;
+  padding: 5px 8px;
   border: none;
   border-radius: 5px;
   color: rgb(19, 18, 18);
   background-color: #81a05a;
   transition: all 0.3s ease 0s;
 }
-
 button:hover {
   color: black;
   background-color: #9dc26f;
-}
-
-.text-banner {
-  font-family: "Poppins", sans-serif;
-  color: #81a05a;
-  font-weight: bold;
 }
 
 .discover h1 {
@@ -146,7 +138,6 @@ button:hover {
   margin: 10px 0px;
   padding: 30px;
 }
-
 .gallery-wrapper {
   display: grid;
   box-sizing: border-box;
@@ -158,25 +149,21 @@ button:hover {
     "a b"
     "c d";
 }
-
 .gallery-image {
   max-height: 200px;
   width: auto;
   object-fit: cover;
 }
-
 .gallery-item-a {
   align-self: center;
   justify-self: center;
   grid-area: a;
 }
-
 .gallery-item-b {
   align-self: center;
   justify-self: center;
   grid-area: b;
 }
-
 .gallery-item-c {
   align-self: center;
   justify-self: center;
@@ -187,24 +174,19 @@ button:hover {
   justify-self: center;
   grid-area: d;
 }
-
-.stars-grid {
-  margin-top: 1em;
-}
-.checked {
-  color: rgb(255, 197, 89);
-}
 .text-grid {
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
 }
 .price-grid {
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
 }
-
-.text-grid {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
+.stars-grid {
+  margin-top: 1em;
+}
+.checked {
+  color: rgb(255, 197, 89);
 }
 
 .news-container {
@@ -214,14 +196,12 @@ button:hover {
   margin-top: 2em;
   justify-content: center;
 }
-
 .news-image {
   position: relative;
   border-radius: 1em;
   height: 200px;
   width: 350px;
 }
-
 .news-image img {
   object-fit: cover;
   border-radius: 1em;
@@ -255,48 +235,39 @@ button:hover {
   margin-top: 1em;
   height: 250px;
   width: 100%;
-  vertical-align: middle;
 }
-
 .visit-profile {
   position: absolute;
   bottom: 0px;
   right: 0px;
   padding: 30px;
 }
-
 .visit-profile img {
   border-radius: 50%;
   width: 130px;
   height: 130px;
 }
-
 .visit-plant {
   display: none;
 }
-
 .visit-text {
   display: block;
   font-family: "Poppins", sans-serif;
   color: #000000;
   padding: 30px;
 }
-
 .visit-text h1 {
   font-size: 25px;
 }
-
 .visit-text p {
   display: none;
 }
-
 a.visit-about {
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
   color: black;
   margin-top: 1em;
 }
-
 a:hover,
 a:visited {
   color: rgb(0, 0, 0);
@@ -310,12 +281,10 @@ a:visited {
   display: block;
   padding: 25px 25px;
 }
-
 .footer-col {
   width: 100%;
   margin-bottom: 30px;
 }
-
 .footer-col h1,
 h3,
 h4,
@@ -336,14 +305,12 @@ p {
   font-size: 12px;
   font-weight: lighter;
 }
-
 .social-mail {
   display: none;
 }
 .footer-logo {
   color: white;
 }
-
 .social-icons {
   display: inline-block;
   width: 30px;
@@ -351,14 +318,12 @@ p {
   line-height: 20px;
   justify-content: center;
 }
-
 .text-logo-footer {
   font-family: "Love Ya Like A Sister", sans-serif;
   font-weight: lighter;
   font-size: 37px;
   color: #79aa8d;
 }
-
 .footer-hr {
   border: 1px solid #c2c2c2;
 }
@@ -369,6 +334,7 @@ p {
   padding: 10px;
   background-color: rgb(44, 44, 44);
 }
+
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1000px) {
   header {
@@ -376,17 +342,11 @@ p {
     display: grid;
     grid-auto-flow: column;
   }
-
   .container {
     width: 85%;
     margin: auto;
   }
 
-  .logo-header {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 10px;
-  }
   .navbar {
     float: right;
   }
@@ -397,23 +357,22 @@ p {
   .navbar li a {
     transition: all 0.3s ease 0s;
   }
-
   .navbar li a:hover {
     color: rgb(68, 68, 68);
   }
 
+  .banner-wrapper {
+    display: block;
+    margin: auto;
+    height: 300px;
+    width: 1500px;
+  }
+  .banner-image img {
+    max-height: 1000px;
+  }
   .content-banner p {
-    font-size: 2.8rem;
+    font-size: 50px;
   }
-
-  .site-banner {
-    max-height: 400px;
-  }
-  .image-banner img {
-    height: 30%;
-    width: 30%;
-  }
-
   button {
     padding: 9px 20px;
     font-size: 20px;
