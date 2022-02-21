@@ -99,7 +99,7 @@ nav {
   font-weight: normal;
   text-align: left;
   letter-spacing: 0.1px;
-  margin: 2em 0em 1em 2em;
+  margin: 2em 0em 0em 2em;
 }
 .content-banner p {
   color: black;
@@ -112,9 +112,8 @@ nav {
 }
 .button-shop {
   display: flex;
-  margin: 10px 0px 0px 0px;
+  margin-top: 10px;
 }
-
 button {
   cursor: pointer;
   font-size: 20px;
@@ -212,19 +211,19 @@ button:hover {
   display: block;
   position: absolute;
   font-family: "Poppins", sans-serif;
+  text-align: center;
   font-weight: bolder;
-  margin-top: 1em;
+  margin-top: 2em;
   padding: 1em;
 }
 .news-text h1 {
   color: white;
   font-size: 24px;
-  margin: 0 1em;
 }
 .news-text h3 {
   color: white;
   font-size: 18px;
-  margin: 1em 0em 0em 3em;
+  margin-top: 10px;
 }
 
 .visit-container {
@@ -237,21 +236,22 @@ button:hover {
   width: 100%;
 }
 .visit-profile {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
+  display: block;
+  margin-left: auto;
+  align-self: flex-end;
   padding: 30px;
 }
 .visit-profile img {
   border-radius: 50%;
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
 }
 .visit-plant {
   display: none;
 }
 .visit-text {
-  display: block;
+  align-self: flex-start;
+  position: absolute;
   font-family: "Poppins", sans-serif;
   color: #000000;
   padding: 30px;
@@ -305,18 +305,14 @@ p {
   font-size: 12px;
   font-weight: lighter;
 }
-.social-mail {
-  display: none;
-}
+
 .footer-logo {
   color: white;
 }
 .social-icons {
-  display: inline-block;
-  width: 30px;
   color: #c2c2c2;
-  line-height: 20px;
-  justify-content: center;
+  width: 30px;
+  margin: 10px 0px;
 }
 .text-logo-footer {
   font-family: "Love Ya Like A Sister", sans-serif;
@@ -365,7 +361,7 @@ p {
     display: block;
     margin: auto;
     height: 300px;
-    width: 1500px;
+    width: 100%;
   }
   .banner-image img {
     max-height: 1000px;
@@ -373,54 +369,102 @@ p {
   .content-banner p {
     font-size: 50px;
   }
+  .button-shop {
+    margin-top: 20px;
+  }
   button {
     padding: 9px 20px;
-    font-size: 20px;
+    font-size: 25px;
+    border-radius: 10px;
   }
 
-  /* .gallery-container {
-    grid-template-columns: repeat(1, 1fr);
+  .discover h1 {
+    font-size: 50px;
+  }
+  .gallery-wrapper {
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-  } */
-
-  .news-page {
-    width: 800px;
+    grid-template-areas: "a b c d";
+  }
+  .gallery-image {
+    max-height: 100%;
   }
 
+  .news-container {
+    margin-top: 50px;
+  }
+  .news-image {
+    width: 100%;
+  }
+  .news-text {
+    margin-top: 10px;
+  }
   .news-text h1 {
-    font-size: 2.5rem;
+    font-size: 50px;
   }
   .news-text h3 {
-    font-size: 1.5rem;
+    font-size: 35px;
+    margin-top: 5px;
   }
 
-  .news-image img {
-    max-width: 1000px;
-    height: 100%;
+  .news-container-shop {
+    margin-top: 50px;
+  }
+  .news-image-shop {
+    width: 100%;
+  }
+  .news-text-shop {
+    margin-top: 10px;
+  }
+  .news-text-shop h1 {
+    font-size: 50px;
+  }
+  .news-text-shop h3 {
+    font-size: 35px;
+    margin-top: 5px;
   }
 
   .visit-profile {
     height: 100%;
-    width: 100%;
-    margin: 0em 2em;
+    width: 300px;
+    margin: 0;
   }
   .visit-profile img {
     border-radius: 50%;
     width: 200px;
     height: 200px;
   }
-
-  .visit-image {
+  .visit-plant {
     display: flex;
-    float: right;
+    position: absolute;
+    right: 0;
   }
-  .visit-image img {
+  .visit-plant img {
     height: 250px;
+  }
+  .visit-text {
+    position: absolute;
+    text-align: center;
+    align-self: center;
+    width: 100%;
+    margin: auto;
+  }
+  .visit-text h1 {
+    font-size: 50px;
+  }
+  .visit-text p {
+    color: black;
+    display: block;
+  }
+  a.visit-about {
+    display: block;
+    margin-top: 20px;
+    font-size: 25px;
   }
 
   .footer-top {
     display: flex;
-    margin-top: 2em;
+    padding-top: 40px;
   }
   .footer-col {
     width: 25%;
@@ -428,10 +472,5 @@ p {
     font-size: 16px;
     align-items: center;
     word-wrap: break-word;
-  }
-
-  .social-mail {
-    display: inline-block;
-    color: #c2c2c2;
   }
 }
