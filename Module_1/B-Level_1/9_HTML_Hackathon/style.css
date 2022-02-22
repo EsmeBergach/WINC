@@ -55,7 +55,7 @@ main {
 .text-logo {
   font-family: "Love Ya Like A Sister", sans-serif;
   font-weight: lighter;
-  font-size: 50px;
+  font-size: 45px;
   color: #79aa8d;
 }
 
@@ -72,7 +72,32 @@ nav {
 .nav-link {
   color: black;
   font-size: 20px;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 10px;
+}
+
+.crumb-container {
+  display: flex;
+  padding: 10px 20px;
+  align-items: baseline;
+}
+.crumb-container h3 {
+  display: flex;
+  color: black;
+  vertical-align: middle;
+}
+.breadcrumb {
+  display: flex;
+  align-items: baseline;
+  margin: auto;
+  margin-right: 0;
+  padding: 0px 5px;
+}
+.visit-shop,
+.home {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  color: black;
+  margin: 0px 5px;
 }
 
 .banner-wrapper {
@@ -111,6 +136,7 @@ nav {
   font-weight: bold;
 }
 .button-shop {
+  cursor: pointer;
   display: flex;
   margin-top: 10px;
 }
@@ -129,18 +155,56 @@ button:hover {
   background-color: #9dc26f;
 }
 
+.news-container-shop {
+  display: flex;
+  padding: 10px 10px;
+  overflow: hidden;
+  max-height: 150px;
+  height: 100%;
+  width: 100%;
+}
+.news-image-shop {
+  position: relative;
+  border-radius: 1em;
+}
+.news-image-shop img {
+  object-fit: cover;
+  border-radius: 1em;
+  width: 100%;
+  height: 100%;
+  mask-size: 500px;
+}
+.news-text-shop {
+  display: block;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+
+  padding: 1em;
+}
+.news-text-shop h1 {
+  color: black;
+  font-size: 24px;
+}
+.news-text-shop h3 {
+  color: black;
+  font-size: 16px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
 .discover h1 {
   font-family: "Poppins", sans-serif;
   text-align: center;
   font-weight: 700px;
   display: block;
   margin: 10px 0px;
-  padding: 30px;
+  padding-top: 20px;
 }
 .gallery-wrapper {
   display: grid;
   box-sizing: border-box;
-  grid-gap: 14px 10px;
+  grid-gap: 30px;
   padding: 10px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 2fr;
@@ -152,6 +216,8 @@ button:hover {
   max-height: 200px;
   width: auto;
   object-fit: cover;
+  border-radius: 1em;
+  width: 100%;
 }
 .gallery-item-a {
   align-self: center;
@@ -231,7 +297,7 @@ button:hover {
   position: relative;
   overflow: hidden;
   background-color: #e4e9e2;
-  margin-top: 1em;
+  margin-top: 2em;
   height: 250px;
   width: 100%;
 }
@@ -317,7 +383,7 @@ p {
 .text-logo-footer {
   font-family: "Love Ya Like A Sister", sans-serif;
   font-weight: lighter;
-  font-size: 37px;
+  font-size: 32px;
   color: #79aa8d;
 }
 .footer-hr {
@@ -370,12 +436,35 @@ p {
     font-size: 50px;
   }
   .button-shop {
+    cursor: pointer;
     margin-top: 20px;
   }
   button {
     padding: 9px 20px;
     font-size: 25px;
     border-radius: 10px;
+  }
+
+  .news-container-shop {
+    max-height: 400px;
+    height: 300px;
+  }
+  .news-image-shop {
+    width: 100%;
+    height: 100%;
+  }
+  .news-text-shop {
+    margin-top: 3em;
+    margin-left: 10em;
+  }
+  .news-text-shop h1 {
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  .news-text-shop h3 {
+    font-size: 35px;
+    margin-top: 2px;
+    margin-left: 4em;
   }
 
   .discover h1 {
@@ -403,23 +492,6 @@ p {
     font-size: 50px;
   }
   .news-text h3 {
-    font-size: 35px;
-    margin-top: 5px;
-  }
-
-  .news-container-shop {
-    margin-top: 50px;
-  }
-  .news-image-shop {
-    width: 100%;
-  }
-  .news-text-shop {
-    margin-top: 10px;
-  }
-  .news-text-shop h1 {
-    font-size: 50px;
-  }
-  .news-text-shop h3 {
     font-size: 35px;
     margin-top: 5px;
   }
