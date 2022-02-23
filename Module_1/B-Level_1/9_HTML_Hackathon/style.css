@@ -657,7 +657,7 @@ p {
     height: 100%;
   }
   .about-text {
-    transform: translate(175%);
+    transform: translate(180%);
     width: 30%;
     margin-top: 2em;
   }
@@ -737,6 +737,11 @@ p {
   .news-text h3 {
     font-size: 35px;
     margin-top: 5px;
+  }
+
+  .contact-form {
+    display: block;
+    text-align:center;
   }
 
   .visit-container {
