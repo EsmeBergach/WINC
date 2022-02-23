@@ -105,18 +105,17 @@ nav {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
   width: 100%;
+  height: 100%;
   padding: 0px 20px;
 }
 .gift-image {
-  position: relative;
   margin: auto;
   padding: 0px 50px;
-  object-fit: cover;
-  max-width: 800px;
 }
 .gift-image img {
+  width: 250px;
+  height: 100%;
   border-radius: 2em;
-  width: 100%;
   align-self: center;
   justify-content: center;
 }
@@ -138,6 +137,10 @@ h1 {
   width: 100%;
   padding: 0px 10px;
 }
+#gift-option {
+  font-size: 18px;
+  text-align: center;
+}
 select {
   width: 100%;
   height: 50px;
@@ -147,6 +150,7 @@ select {
   display: flex;
   cursor: pointer;
   margin: 20px 0em;
+  justify-content: center;
 }
 .gift-description {
   font-size: 16px;
@@ -521,52 +525,71 @@ p {
     border-radius: 10px;
   }
 
-  /* .gift-container {
+  .gift-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    width: 100%;
+    margin-top: 3em;
+    height: 800px;
+    grid-template-areas: "p l";
   }
   .gift-image {
-    position: relative;
-    margin-left: 7rem;
-    padding: 0px 50px;
-    object-fit: cover;
-    max-width: 700px;
+    width: 100%;
+    position: absolute;
+    grid-area: p;
   }
   .gift-image img {
-    border-radius: 2em;
-    width: 100%;
-    align-self: center;
-    justify-content: center;
-  } */
-  /* .gift-text {
-    display: block;
+    width: 600px;
+    height: 800px;
+  }
+  .gift-text {
     padding-left: 50px;
     width: 100%;
+    grid-area: l;
+  }
+  .gift-text h1 {
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
     color: black;
+    margin-bottom: 1em;
   }
-  
+  .gift-wrapper {
+    display: flex;
+    padding: 10px;
+  }
+  .gift-select {
+    width: 100%;
+    margin-left: 2em;
+  }
+  .gift-h4 {
+    font-size: 24px;
+    margin-right: 1em;
+  }
+  #gift-option {
+    font-size: 24px;
+    text-align: center;
+  }
   .button-gift {
     display: flex;
     cursor: pointer;
-    margin: 1em;
-    align-self: center;
-    justify-content: center;
+    justify-content: left;
+    margin: 10px;
   }
   .gift-description {
-    display: flex;
+    display: inline-flex;
     font-size: 30px;
     font-family: "Poppins", sans-serif;
     margin-top: 1em;
     align-self: flex-end;
   }
   .gift-description h2 {
-    font-size: 50px;
-    margin-right: 5em;
-  } */
+    font-size: 24px;
+    margin-right: 2em;
+  }
+  .details-content {
+    display: block;
+    font-weight: lighter;
+  }
 
   .news-container-shop {
     max-height: 400px;
