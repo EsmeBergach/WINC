@@ -105,7 +105,7 @@ nav {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
   width: 100%;
-  margin-top: 2em;
+  padding: 0px 20px;
 }
 .gift-image {
   position: relative;
@@ -120,63 +120,66 @@ nav {
   align-self: center;
   justify-content: center;
 }
-/* .gift-text {
-  display: block;
-  padding-left: 50px;
-  width: 100%;
+.gift-text h4,
+h1 {
   font-family: "Poppins", sans-serif;
-  font-weight: bolder;
+  margin: 10px 0px;
   color: black;
 }
-
+.gift-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+}
+.gift-option {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0px 10px;
+}
+select {
+  width: 100%;
+  height: 50px;
+  margin: auto;
+}
 .button-gift {
   display: flex;
   cursor: pointer;
-  margin: 1em;
-  align-self: center;
-  justify-content: center;
+  margin: 20px 0em;
 }
 .gift-description {
-  display: flex;
-  font-size: 30px;
+  font-size: 16px;
   font-family: "Poppins", sans-serif;
-  margin-top: 1em;
-  align-self: flex-end;
+  margin-bottom: 20px;
 }
 .gift-description h2 {
-  font-size: 50px;
-  margin-right: 5em;
-} */
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 
 .banner-wrapper {
-  display: block;
-  position: relative;
+  display: flex;
   overflow: hidden;
-  border-radius: 1em;
-  width: 100%;
-  height: 200px;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
   box-shadow: 0 5px 10px #0005;
 }
-.banner-image {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}
 .banner-image img {
-  margin: 10px 0px 0px 10px;
-  height: 50%;
-  width: 50%;
-  float: right;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .content-banner {
+  position: absolute;
   font-weight: normal;
   text-align: left;
   letter-spacing: 0.1px;
-  margin: 2em 0em 0em 2em;
+  margin: 10px 0px 0px 20px;
 }
 .content-banner p {
   color: black;
-  font-size: 30px;
+  font-size: 25px;
 }
 .text-banner {
   font-family: "Poppins", sans-serif;
@@ -184,9 +187,10 @@ nav {
   font-weight: bold;
 }
 .button-shop {
-  cursor: pointer;
-  display: flex;
-  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+  transform: scale(80%);
+  margin-top: 1em;
 }
 button {
   cursor: pointer;
@@ -205,15 +209,13 @@ button:hover {
 
 .news-container-shop {
   display: flex;
-  padding: 10px 10px;
+  margin: auto;
   overflow: hidden;
   max-height: 150px;
   height: 100%;
-  width: 100%;
-}
-.news-image-shop {
+  width: 90%;
+  box-shadow: 0 5px 10px #0005;
   border-radius: 1em;
-  overflow: hidden;
 }
 .news-image-shop img {
   transform: translateY(-20px) scale(150%);
@@ -242,10 +244,20 @@ button:hover {
   text-align: center;
   font-weight: 700px;
   display: block;
-  margin: 10px 0px;
   padding-top: 20px;
 }
 .gallery-wrapper {
+  display: grid;
+  box-sizing: border-box;
+  grid-gap: 30px;
+  padding: 30px 0px 30px 0px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 4fr;
+  grid-template-areas:
+    "a b"
+    "c d";
+}
+.gallery-wrapper-shop {
   display: grid;
   box-sizing: border-box;
   grid-gap: 30px;
@@ -489,13 +501,12 @@ p {
   }
 
   .banner-wrapper {
-    display: block;
     margin: auto;
-    height: 300px;
-    width: 100%;
+    max-height: 300px;
   }
-  .banner-image img {
-    max-height: 1000px;
+  .content-banner {
+    margin-top: 40px;
+    margin-left: 40px;
   }
   .content-banner p {
     font-size: 50px;
@@ -560,10 +571,11 @@ p {
   .news-container-shop {
     max-height: 400px;
     height: 300px;
-  }
-  .news-image-shop {
     width: 100%;
-    height: 100%;
+    margin-top: 20px;
+  }
+  .news-image-shop img {
+    transform: translateY(-220px) scale(110%);
   }
   .news-text-shop {
     margin-top: 3em;
@@ -580,12 +592,22 @@ p {
   }
 
   .discover h1 {
-    font-size: 50px;
+    font-size: 40px;
+    margin-top: 1.5em;
   }
   .gallery-wrapper {
     padding: 30px 0px 100px 0px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 2fr;
+    grid-template-areas: "a b c d";
+  }
+  .gallery-wrapper-shop {
+    display: grid;
+    box-sizing: border-box;
+    grid-gap: 30px;
+    padding: 30px 0px 30px 0px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 4fr;
     grid-template-areas:
       "a b c d"
       "e f g h";
@@ -609,6 +631,9 @@ p {
     margin-top: 5px;
   }
 
+  .visit-container {
+    margin-top: 2em;
+  }
   .visit-profile {
     height: 100%;
     width: 300px;
