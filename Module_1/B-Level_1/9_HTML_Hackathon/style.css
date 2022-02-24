@@ -8,6 +8,7 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
+  font-family: "Poppins", sans-serif;
 }
 li,
 button {
@@ -163,8 +164,8 @@ select {
 .banner-wrapper {
   display: flex;
   overflow: hidden;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
   box-shadow: 0 5px 10px #0005;
 }
 .banner-image img {
@@ -197,7 +198,7 @@ select {
 button {
   cursor: pointer;
   font-size: 20px;
-  padding: 5px 8px;
+  padding: 5px 20px;
   border: none;
   border-radius: 5px;
   color: rgb(19, 18, 18);
@@ -215,7 +216,7 @@ button:hover {
   height: 200px;
   width: 100%;
   box-shadow: 0 5px 10px #0005;
-  border-radius: 1em;
+  border-radius: 0.1em;
   background: #e4e9e2;
 }
 .about-image {
@@ -251,8 +252,47 @@ button:hover {
   margin-top: 20px;
 }
 .about-details {
-  margin-top: 1em;
+  text-align: center;
+  margin: 30px 10px;
   padding: 0px 10px;
+}
+
+.contact-form {
+  width: 90%;
+  margin: auto;
+}
+.contact-text {
+  padding: 20px 0px;
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 1.5em;
+  border-radius: 1em;
+}
+.form-control {
+  box-shadow: none;
+  border-radius: 0;
+  border-color: #ccc;
+  border-style: none none solid none;
+  width: 100%;
+  font-size: 20px;
+}
+.form-control::placeholder {
+  color: rgb(204, 203, 203);
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: none;
+  outline: none;
+}
+.button-form {
+  cursor: pointer;
+  padding-bottom: 20px;
+  align-items: left;
+  margin-bottom: 2em;
+}
+textarea {
+  resize: none;
 }
 
 .news-container-shop {
@@ -260,8 +300,7 @@ button:hover {
   margin: auto;
   overflow: hidden;
   box-shadow: 0 5px 10px #0005;
-  border-radius: 1em;
-  margin: 0px 10px;
+  border-radius: 0.1em;
 }
 .news-image-shop {
   position: relative;
@@ -553,6 +592,8 @@ p {
   }
 
   .banner-wrapper {
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
     margin: auto;
     max-height: 300px;
   }
@@ -568,7 +609,7 @@ p {
     margin-top: 20px;
   }
   button {
-    padding: 9px 20px;
+    padding: 5px 20px;
     font-size: 25px;
     border-radius: 10px;
   }
@@ -640,11 +681,8 @@ p {
   }
 
   .about-container {
-    max-height: 350px;
-    height: 100%;
-    box-shadow: 0 5px 10px #0005;
+    height: 250px;
     border-radius: 1em;
-    background: #e4e9e2;
   }
   .about-image {
     width: 70%;
@@ -659,7 +697,7 @@ p {
   .about-text {
     transform: translate(180%);
     width: 30%;
-    margin-top: 2em;
+    margin-top: 1em;
   }
   .about-text p {
     font-weight: lighter;
@@ -672,10 +710,21 @@ p {
     text-align: center;
   }
   .about-details {
-    margin-top: 1em;
+    margin-top: 2em;
+    text-align: start;
+  }
+
+  .contact-form {
+    width: 50%;
+    margin: auto;
+  }
+  .contact-text {
+    padding: 20px 0px;
+    margin-top: 1.5em;
   }
 
   .news-container-shop {
+    border-radius: 1em;
     height: 300px;
     width: 100%;
     margin-top: 20px;
@@ -737,11 +786,6 @@ p {
   .news-text h3 {
     font-size: 35px;
     margin-top: 5px;
-  }
-
-  .contact-form {
-    display: block;
-    text-align:center;
   }
 
   .visit-container {
