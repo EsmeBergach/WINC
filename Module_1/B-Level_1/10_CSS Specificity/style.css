@@ -1,0 +1,86 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 18px;
+} */
+body {
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+}
+.row {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px;
+}
+.cards {
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 2px lightgrey;
+}
+.header {
+  display: flex;
+}
+.header img {
+  display: block;
+  margin-left: auto;
+}
+
+.card-h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.card-h2 {
+  color: rgb(179, 179, 179);
+  font-weight: normal;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.card-2 {
+  float: right;
+  width: 100%;
+}
+.card-text {
+  font-size: 18px;
+}
+hr {
+  width: 100%;
+  border-top: 0.1px solid #ccc;
+}
+
+.card-buttons {
+  display: flex;
+}
+button {
+  background-color: white;
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+}
+.btn-approve {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 2px solid rgb(89, 233, 89);
+  border-right: none;
+  color: rgb(89, 233, 89);
+  font-weight: bolder;
+}
+
+.btn-decline {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 2px solid rgb(223, 2, 2);
+  color: rgb(223, 2, 2);
+}
