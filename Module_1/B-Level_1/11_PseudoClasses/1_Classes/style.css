@@ -1,0 +1,66 @@
+/* General */
+* {
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Part 1 */
+h2 {
+  margin: 1em;
+}
+.links a {
+  display: block;
+  padding: 12px;
+}
+
+.insta:hover {
+  color: aqua;
+  font-weight: bolder;
+}
+
+.twitter:active {
+  color: red;
+  font-style: italic;
+}
+.facebook:visited {
+  color: rgb(168, 110, 3);
+}
+.input:focus {
+  color: green;
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+/* Part 2 */
+
+.nav {
+  display: flex;
+  width: 100%;
+  background-color: darkblue;
+  padding: 0;
+}
+.nav ul {
+  display: flex;
+  margin: auto;
+  padding: 0;
+  background: #555;
+}
+.nav li a {
+  color: white;
+  margin-right: 20px;
+}
+.nav li a:first-child {
+  margin-left: 0;
+}
+.nav li a:hover {
+  background-color: lightblue;
+}
+.currentpage {
+  background-color: rgb(165, 176, 238);
+}
+.search:focus {
+  border: 5px solid aqua;
+}
