@@ -1,0 +1,86 @@
+@import "_constants.scss";
+
+* {
+  @include displayAll();
+}
+body {
+  background-color: $colorGray;
+}
+main {
+  display: flex;
+  margin: 2em;
+}
+.card {
+  @include displayCenter();
+  flex-direction: column;
+  border-radius: 2em;
+  width: 500px;
+  height: 650px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 15px;
+  &__top {
+    height: 65%;
+    padding: 50px;
+  }
+  & p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+  &__image {
+    margin: auto;
+    display: flex;
+    position: relative;
+    border-radius: 50%;
+    height: 170px;
+    margin-top: 1.5em;
+    border: 8px solid $colorWhite;
+  }
+  &__image img {
+    position: absolute;
+    object-fit: cover;
+  }
+  &__bottom {
+    @include displayCenter();
+    width: 100%;
+    height: 35%;
+    background: $colorPurple;
+  }
+  &__text-bottom {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    align-items: center;
+    margin-top: 3.5em;
+    & h1 {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: normal;
+      color: $colorWhite;
+    }
+    & h2 {
+      margin-top: 0.5em;
+      font-size: 1.4em;
+      font-weight: lighter;
+      color: $colorPurpleLight;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    overflow-x: scroll;
+  }
+  main {
+    width: 100%;
+  }
+  .card {
+    &__image {
+      height: 150px;
+    }
+    &__top {
+      height: 65%;
+      padding: 10px;
+    }
+  }
+}

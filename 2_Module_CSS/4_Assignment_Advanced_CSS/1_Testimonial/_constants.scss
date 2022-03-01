@@ -1,0 +1,16 @@
+$colorPurple: #686de0;
+$colorPurpleLight: #b3b6fa;
+$colorGray: #c3cfe2;
+$colorWhite: #fff;
+
+@mixin displayAll() {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@mixin displayCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
