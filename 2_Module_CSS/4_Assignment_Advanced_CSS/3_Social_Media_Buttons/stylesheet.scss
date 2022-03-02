@@ -16,8 +16,9 @@ main {
   }
 }
 
-.fa-laptop-code::before {
+.social__blog::before {
   content: "\f5fc";
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
+  text-transform: lowercase;
 }
