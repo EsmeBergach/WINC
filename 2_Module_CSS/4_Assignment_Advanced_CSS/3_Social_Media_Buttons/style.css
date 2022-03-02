@@ -12,6 +12,9 @@ body {
 
 main {
   margin: auto;
+}
+
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,5 +22,16 @@ main {
 
 .social__blog::before {
   content: "\f5fc";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+
+.social__blog li {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,14 +8,19 @@ body {
 }
 main {
   margin: auto;
+}
+.social {
   display: flex;
 }
-// .social > * {
-//   &__buttons {
-//     display: flex;
-//   }
-// }
 
 .social__blog::before {
   content: "\f5fc";
+  display: flex;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+.social__blog li {
+  color: red;
 }
