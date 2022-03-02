@@ -2,14 +2,15 @@
   body {
     background-color: #c3cfe2;
   }
-  body main {
+  main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  body .gallery {
+  .gallery {
     display: -ms-grid;
     display: grid;
+    margin: auto;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     grid-gap: 10px;
@@ -20,39 +21,39 @@
         grid-template-rows: 1fr;
         grid-template-areas: "a" "b" "c" "d" "e" "f";
   }
-  body .gallery__image {
-    height: 200px;
+  .gallery__image {
     -o-object-fit: cover;
        object-fit: cover;
+    width: 400;
     border-radius: 1em;
     width: 100%;
   }
-  body .gallery__item-a {
+  .gallery__item-a {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: a;
   }
-  body .gallery__item-b {
+  .gallery__item-b {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: b;
   }
-  body .gallery__item-c {
+  .gallery__item-c {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: c;
   }
-  body .gallery__item-d {
+  .gallery__item-d {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: d;
   }
-  body .gallery__item-e {
+  .gallery__item-e {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     grid-area: e;
   }
-  body .gallery__item-f {
+  .gallery__item-f {
     -ms-grid-row: 6;
     -ms-grid-column: 1;
     grid-area: f;
@@ -60,5 +61,50 @@
 }
 
 /* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 480px) and (max-width: 1024px) {
+  .gallery {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    grid-gap: 10px;
+    padding: 30px 0px 30px 0px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "a b" "c d" "e f";
+  }
+  .gallery__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 400;
+    border-radius: 1em;
+    width: 100%;
+  }
+}
+
 /* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) {
+  .gallery {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    grid-gap: 10px;
+    padding: 30px 0px 30px 0px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "a b c" "d e f";
+  }
+  .gallery__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 400;
+    border-radius: 1em;
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=stylesheet.css.map */
