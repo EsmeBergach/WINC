@@ -1,0 +1,23 @@
+@import "_constants.scss";
+
+* {
+  @include DisplayAll();
+}
+body {
+  background-color: $colorGray;
+}
+main {
+  margin: auto;
+  display: flex;
+}
+.social > * {
+  &__buttons {
+    display: flex;
+  }
+}
+
+.fa-laptop-code::before {
+  content: "\f5fc";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+}
