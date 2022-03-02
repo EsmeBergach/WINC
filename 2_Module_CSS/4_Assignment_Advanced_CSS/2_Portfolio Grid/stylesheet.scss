@@ -1,111 +1,87 @@
 @import "_constants.scss";
 
-@mixin galleryImageMobile() {
-  object-fit: cover;
-  width: 400;
-  border-radius: 1em;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-@mixin galleryImageIpad() {
-  object-fit: cover;
-  width: 200px;
-  border-radius: 1em;
-}
-
 /* Media Query for Mobile Devices */
-@media (min-width: 200px) and (max-width: 480px) {
-  body {
-    background-color: $colorGray;
-  }
-  main {
-    display: flex;
-    width: 100%;
-  }
-  .gallery {
-    display: grid;
-    margin: auto;
-    box-sizing: border-box;
-    grid-gap: 10px;
-    padding: 30px 0px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "a" "b" "c" "d" "e" "f";
 
-    &__image {
-      @include galleryImageIpad();
-    }
-    &__item-a {
-      grid-area: a;
-    }
-    &__item-b {
-      grid-area: b;
-    }
-    &__item-c {
-      grid-area: c;
-    }
-    &__item-d {
-      grid-area: d;
-    }
-    &__item-e {
-      grid-area: e;
-    }
-    &__item-f {
-      grid-area: f;
-    }
+body {
+  background-color: #c3cfe2;
+}
+main {
+  margin: auto;
+  display: flex;
+}
+.gallery {
+  display: grid;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  grid-gap: 20px;
+  padding: 30px 30px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+
+  &__flower-image {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    opacity: 1;
+  }
+  &__image {
+    border-radius: 1em;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__overlay {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  &__overlay:hover {
+    opacity: 1;
+  }
+  &__button {
+    color: pink;
+    font-family: sans-serif;
   }
 }
 
 /* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 480px) and (max-width: 1024px) {
-  body {
-    background-color: $colorGray;
-  }
+@media (min-width: 768px) {
   .gallery {
-    display: grid;
-    box-sizing: border-box;
-    grid-gap: 10px;
-    padding: 30px 0px 30px 0px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: "a b" "c d" "e f";
+    // grid-template-areas: "a b" "c d" "e f";
 
     &__image {
-      @include galleryImageIpad();
-    }
-    &__item-a {
-      grid-area: a;
-    }
-    &__item-b {
-      grid-area: b;
-    }
-    &__item-c {
-      grid-area: c;
-    }
-    &__item-d {
-      grid-area: d;
-    }
-    &__item-e {
-      grid-area: e;
-    }
-    &__item-f {
-      grid-area: f;
+      width: 100%;
+      height: 100%;
     }
   }
 }
 
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) {
+  main {
+    width: 85%;
+  }
   .gallery {
-    display: grid;
-    box-sizing: border-box;
-    grid-gap: 10px;
-    padding: 30px 0px 30px 0px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: "a b c" "d e f";
+    // grid-template-areas: "a b c" "d e f";
 
     &__image {
-      @include galleryImage();
     }
   }
 }
