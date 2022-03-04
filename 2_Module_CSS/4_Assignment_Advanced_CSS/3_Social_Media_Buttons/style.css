@@ -1,37 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
 * {
   list-style: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-body {
+body,
+main {
   background-color: #c3cfe2;
 }
 
-main {
-  margin: auto;
+.social {
+  height: 100vh;
+  position: relative;
 }
 
-.social {
+.social__content {
+  margin-right: 10px;
+  margin-bottom: 20px;
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+}
+
+.social__icons {
+  overflow: hidden;
+  width: 200px;
+  height: 50px;
+  margin: 10px 0px;
+  height: 75px;
+  width: 75px;
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.social__blog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
+  float: bottom;
+}
+
+.social__blog:hover {
+  width: 200px;
 }
 
 .social__blog::before {
   content: "\f5fc";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+.social__blog span:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  width: 100px;
-  height: 100px;
-  background-color: yellow;
+  color: green;
 }
 
-.social__blog li {
+.social__blog span {
   color: red;
+}
+
+.social__twitter::before {
+  content: "\f099";
+  font-family: "Font Awesome 5 Brands";
+}
+
+.social__linkedin::before {
+  content: "\f08c";
+  font-family: "Font Awesome 5 Brands";
+}
+
+.social__facebook::before {
+  content: "\f39e";
+  font-family: "Font Awesome 5 Brands";
+}
+
+.social__github::before {
+  content: "\f09b";
+  font-family: "Font Awesome 5 Brands";
 }
 /*# sourceMappingURL=style.css.map */

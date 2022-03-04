@@ -3,24 +3,85 @@
 * {
   @include DisplayAll();
 }
-body {
+body,
+main {
   background-color: $colorGray;
 }
-main {
-  margin: auto;
-}
-.social {
-  display: flex;
-}
 
-.social__blog::before {
-  content: "\f5fc";
-  display: flex;
+.social {
+  height: 100vh;
   position: relative;
-  width: 100px;
-  height: 100px;
-  background-color: yellow;
-}
-.social__blog li {
-  color: red;
+
+  &__content {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+  }
+  &__icons {
+    overflow: hidden;
+    width: 200px;
+    height: 50px;
+
+    // margin-bottom: 5em;
+    margin: 10px 0px;
+    height: 75px;
+    width: 75px;
+    background-color: yellow;
+    cursor: pointer;
+  }
+  &__blog {
+    display: flex;
+    overflow: hidden;
+    float: bottom;
+
+    &:hover {
+      width: 200px;
+    }
+
+    &::before {
+      content: "\f5fc";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      cursor: pointer;
+    }
+
+    & span:hover {
+      display: flex;
+      color: green;
+    }
+    & span {
+      // display: none;
+      color: red;
+    }
+  }
+  &__twitter {
+    &::before {
+      content: "\f099";
+      font-family: "Font Awesome 5 Brands";
+    }
+  }
+  &__linkedin {
+    &::before {
+      content: "\f08c";
+      font-family: "Font Awesome 5 Brands";
+    }
+  }
+  &__facebook {
+    &::before {
+      content: "\f39e";
+      font-family: "Font Awesome 5 Brands";
+    }
+  }
+  &__github {
+    &::before {
+      content: "\f09b";
+      font-family: "Font Awesome 5 Brands";
+    }
+  }
 }
