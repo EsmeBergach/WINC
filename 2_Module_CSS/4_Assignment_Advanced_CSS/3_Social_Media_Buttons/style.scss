@@ -3,62 +3,66 @@
 * {
   @include DisplayAll();
 }
-body,
+
 main {
   background-color: $colorGray;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .social {
-  height: 100vh;
-  position: relative;
-
   &__content {
-    margin-right: 10px;
-    margin-bottom: 20px;
-    position: absolute;
     display: inline-block;
+    position: absolute;
+    margin-right: 10px;
+
     bottom: 0;
     right: 0;
+    text-align: center;
   }
   &__icons {
-    overflow: hidden;
-    width: 200px;
-    height: 50px;
-
-    // margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    // overflow: hidden;
     margin: 10px 0px;
     height: 75px;
     width: 75px;
     background-color: yellow;
-    cursor: pointer;
+    align-self: center;
+    justify-content: center;
+    font-size: 25px;
+    align-items: center;
+    line-height: 60px;
   }
-  &__blog {
+  &__icons:hover {
+    width: 200px;
+  }
+  &__icons span {
+    line-height: 60px;
+  }
+  &__icons span:hover {
     display: flex;
-    overflow: hidden;
-    float: bottom;
-
-    &:hover {
-      width: 200px;
-    }
-
+    font-size: 20px;
+    line-height: 75px;
+  }
+  & span {
+  }
+  // & span:hover {
+  //   display: flex;
+  //   color: green;
+  // }
+  &__blog {
     &::before {
       content: "\f5fc";
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-      cursor: pointer;
     }
-
-    & span:hover {
-      display: flex;
-      color: green;
-    }
-    & span {
-      // display: none;
-      color: red;
-    }
+    // &:hover {
+    //   display: inline-block;
+    //   width: 200px;
+    // }
   }
   &__twitter {
     &::before {

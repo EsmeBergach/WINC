@@ -19,60 +19,60 @@ main {
 }
 
 .social__content {
+  display: inline-block;
+  position: absolute;
   margin-right: 10px;
   margin-bottom: 20px;
-  position: absolute;
-  display: inline-block;
   bottom: 0;
   right: 0;
+  text-align: center;
 }
 
 .social__icons {
-  overflow: hidden;
-  width: 200px;
-  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
   margin: 10px 0px;
   height: 75px;
   width: 75px;
   background-color: yellow;
-  cursor: pointer;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 60px;
 }
 
-.social__blog {
+.social__icons:hover {
+  width: 200px;
+}
+
+.social__icons span {
+  line-height: 60px;
+}
+
+.social__icons span:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
-  float: bottom;
-}
-
-.social__blog:hover {
-  width: 200px;
+  font-size: 20px;
+  line-height: 75px;
 }
 
 .social__blog::before {
   content: "\f5fc";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: auto;
-  cursor: pointer;
-}
-
-.social__blog span:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: green;
-}
-
-.social__blog span {
-  color: red;
 }
 
 .social__twitter::before {
