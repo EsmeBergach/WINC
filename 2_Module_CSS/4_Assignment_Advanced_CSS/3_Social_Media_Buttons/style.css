@@ -8,27 +8,13 @@
   font-family: "Poppins", sans-serif;
 }
 
-body,
-main {
+body {
   background-color: #c3cfe2;
+  height: 100%;
+  width: 100%;
 }
 
 .social {
-  height: 100vh;
-  position: relative;
-}
-
-.social__content {
-  display: inline-block;
-  position: absolute;
-  margin-right: 10px;
-  margin-bottom: 80px;
-  bottom: 0;
-  right: 0;
-  text-align: center;
-}
-
-.social__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,7 +22,18 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  cursor: pointer;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  margin-right: 10px;
+  margin-bottom: 80px;
+}
+
+.social__icons {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
   overflow: hidden;
   margin: 10px 0px;
   height: 75px;
@@ -47,15 +44,24 @@ main {
       -ms-flex-align: center;
           align-items: center;
   line-height: 75px;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
 }
 
 .social__icons:hover {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  cursor: pointer;
   width: 200px;
+  background-color: yellow;
 }
 
 .social span {
   display: inline-block;
   text-align: center;
+  margin-left: 20px;
 }
 
 .social__blog::before {
