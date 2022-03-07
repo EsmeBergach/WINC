@@ -22,7 +22,7 @@ main {
   display: inline-block;
   position: absolute;
   margin-right: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   bottom: 0;
   right: 0;
   text-align: center;
@@ -37,36 +37,25 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   cursor: pointer;
+  overflow: hidden;
   margin: 10px 0px;
   height: 75px;
   width: 75px;
   background-color: yellow;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-size: 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  line-height: 60px;
+  line-height: 75px;
 }
 
 .social__icons:hover {
   width: 200px;
 }
 
-.social__icons span {
-  line-height: 60px;
-}
-
-.social__icons span:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 20px;
-  line-height: 75px;
+.social span {
+  display: inline-block;
+  text-align: center;
 }
 
 .social__blog::before {
