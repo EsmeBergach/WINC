@@ -20,7 +20,10 @@ $colorFade: rgba(0, 0, 0, 0.85);
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-@mixin displayCenter() {
-  justify-content: center;
+@mixin centerP() {
+  justify-items: center;
   align-items: center;
+}
+@mixin centerC() {
+  align-self: center;
 }
