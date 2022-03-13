@@ -10,6 +10,8 @@ $colorPurple: #686de0;
 $colorPurpleLight: #b3b6fa;
 $colorGray: #c3cfe2;
 $colorWhite: #fff;
+$colorBlack: black;
+$colorFade: rgba(0, 0, 0, 0.85);
 
 @mixin displayAll() {
   list-style: none;
@@ -19,8 +21,6 @@ $colorWhite: #fff;
   font-family: "Poppins", sans-serif;
 }
 @mixin displayCenter() {
-  display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
 }
