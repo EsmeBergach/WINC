@@ -35,11 +35,13 @@ body {
     line-height: 1.8rem;
   }
   &__image {
+    display: flex;
+    height: 100px;
     margin: auto;
     position: relative;
     border-radius: 50%;
     border: 5px solid $colorWhite;
-    margin-top: 2em;
+    margin-bottom: 4em;
   }
   &__image img {
     position: absolute;
@@ -83,18 +85,15 @@ body {
   align-self: center;
 
   &__flower-image {
-    // position: relative;
-    // object-fit: cover;
-    // opacity: 1;
+    position: relative;
+    opacity: 1;
   }
   &__image {
-    // border-radius: 1em;
-    // object-fit: cover;
-    // display: block;
-  }
-  &__image img {
-    height: 50%;
-    width: 50%;
+    height: 250px;
+    width: 250px;
+    border-radius: 1em;
+    object-fit: cover;
+    display: block;
   }
   &__overlay {
     display: flex;
@@ -104,13 +103,15 @@ body {
     justify-content: center;
     top: 0;
     left: 0;
+    height: 100%;
+    width: 100%;
     background: $colorFade;
     opacity: 0;
     transition: 250ms;
   }
   &__overlay:hover {
-    // border-radius: 1em;
-    // opacity: 1;
+    border-radius: 1em;
+    opacity: 1;
   }
   &__button {
     cursor: pointer;
