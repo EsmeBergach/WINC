@@ -74,11 +74,14 @@ body {
   color: #fff;
 }
 
-.card__text-bottom h2 {
-  margin-top: 0.5em;
-  font-size: 1rem;
+.card__text-bottom a {
+  text-decoration: none;
   font-weight: lighter;
+}
+
+.card__text-bottom :visited {
   color: #b3b6fa;
+  text-decoration: none;
 }
 
 .gallery {

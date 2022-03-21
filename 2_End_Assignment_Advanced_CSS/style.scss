@@ -58,11 +58,13 @@ body {
       font-weight: normal;
       color: $colorWhite;
     }
-    & h2 {
-      margin-top: 0.5em;
-      font-size: 1rem;
+    & a {
+      text-decoration: none;
       font-weight: lighter;
+    }
+    & :visited {
       color: $colorPurpleLight;
+      text-decoration: none;
     }
   }
 }
