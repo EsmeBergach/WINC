@@ -31,30 +31,25 @@ body {
 }
 
 .card__top {
+  display: block;
   height: 65%;
   padding: 2em;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .card p {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.8rem;
+  text-align: start;
 }
 
 .card__image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 100px;
-  margin: auto;
-  position: relative;
   border-radius: 50%;
   border: 5px solid #fff;
   margin-top: 1em;
-}
-
-.card__image img {
-  position: absolute;
 }
 
 .card__bottom {
@@ -133,8 +128,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -142,14 +135,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 200px;
+  height: 100%;
   background: rgba(0, 0, 0, 0.85);
   opacity: 0;
   -webkit-transition: 250ms;
   transition: 250ms;
+  border-radius: 1em;
 }
 
 .gallery__overlay:hover {
-  border-radius: 1em;
   opacity: 1;
 }
 
@@ -204,7 +198,6 @@ body {
   text-align: center;
   bottom: 0;
   right: 0;
-  margin-right: 10px;
   margin-bottom: 80px;
 }
 

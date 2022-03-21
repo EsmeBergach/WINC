@@ -24,25 +24,23 @@ body {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 15px;
 
   &__top {
+    display: block;
     height: 65%;
     padding: 2em;
+    margin: 0 auto;
+    text-align: center;
   }
   & p {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     line-height: 1.8rem;
+    text-align: start;
   }
   &__image {
-    display: flex;
     height: 100px;
-    margin: auto;
-    position: relative;
     border-radius: 50%;
     border: 5px solid $colorWhite;
     margin-top: 1em;
-  }
-  &__image img {
-    position: absolute;
   }
   &__bottom {
     width: 100%;
@@ -99,16 +97,16 @@ body {
   &__overlay {
     display: flex;
     position: absolute;
-    align-content: center;
     justify-content: center;
     align-items: center;
     width: 200px;
+    height: 100%;
     background: $colorFade;
     opacity: 0;
     transition: 250ms;
+    border-radius: 1em;
   }
   &__overlay:hover {
-    border-radius: 1em;
     opacity: 1;
   }
   &__button {
@@ -156,7 +154,6 @@ body {
   text-align: center;
   bottom: 0;
   right: 0;
-  margin-right: 10px;
   margin-bottom: 80px;
 
   & a:visited {
