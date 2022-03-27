@@ -9,7 +9,9 @@
   font-family: "Poppins", sans-serif;
 }
 
-.nav {
+.nav-main {
+  width: 150px;
+  height: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,45 +19,21 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: grey;
   top: 0;
   left: 0;
-  width: 150px;
 }
 
-.nav__hamburger {
-  width: 60px;
-  height: 100%;
+.nav-main__hamburger {
+  width: 200px;
   background-color: coral;
-  background-image: url("D:GITHUBWINC_End_Assignment_Javascript_Color_Toggleimages");
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
+  cursor: pointer;
 }
 
-.nav a:visited {
+.nav-main a:visited {
   color: black;
-}
-
-.nav__links:nth-child(1) {
-  background-color: #cedaec;
-  padding: 0.5em;
-}
-
-.nav__links:nth-child(2) {
-  background-color: #b3ffd9;
-  padding: 0.5em;
-}
-
-.nav__links:nth-child(3) {
-  background-color: #ffe6ff;
-  padding: 0.5em;
-}
-
-.nav__links:nth-child(4) {
-  background-color: #527a7a;
-  padding: 0.5em;
-}
-
-.nav__links:nth-child(5) {
-  background-color: #8a9196;
-  padding: 0.5em;
 }
 /*# sourceMappingURL=style.css.map */
