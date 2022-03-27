@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+$colorHome: #cedaec;
+$colorAqua: #b3ffd9;
+$colorBlush: #ffe6ff;
+$colorSage: #527a7a;
+$colorStone: #8a9196;
+$colorWhite: #fff;
+$colorBlack: black;
+
+@mixin displayAll() {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
