@@ -9,14 +9,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-.hamburger::before {
-  content: "\f039";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  float: left;
-  margin: 0.5em 0em 0.5em 0.5em;
-}
-
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,31 +22,39 @@
   width: 150px;
 }
 
-.nav a:visited {
-  color: #fff;
+.nav__hamburger {
+  width: 60px;
+  height: 100%;
+  background-color: coral;
+  background-image: url("D:GITHUBWINC_End_Assignment_Javascript_Color_Toggleimages");
+  background-position: center;
 }
 
-.nav__item:nth-child(1) {
+.nav a:visited {
+  color: black;
+}
+
+.nav__links:nth-child(1) {
   background-color: #cedaec;
   padding: 0.5em;
 }
 
-.nav__item:nth-child(2) {
+.nav__links:nth-child(2) {
   background-color: #b3ffd9;
   padding: 0.5em;
 }
 
-.nav__item:nth-child(3) {
+.nav__links:nth-child(3) {
   background-color: #ffe6ff;
   padding: 0.5em;
 }
 
-.nav__item:nth-child(4) {
+.nav__links:nth-child(4) {
   background-color: #527a7a;
   padding: 0.5em;
 }
 
-.nav__item:nth-child(5) {
+.nav__links:nth-child(5) {
   background-color: #8a9196;
   padding: 0.5em;
 }
