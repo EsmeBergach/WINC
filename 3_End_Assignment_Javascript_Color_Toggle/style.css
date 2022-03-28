@@ -10,30 +10,63 @@
 }
 
 .nav-main {
-  width: 150px;
-  height: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: grey;
+  position: fixed;
   top: 0;
-  left: 0;
+  width: 40px;
+  height: 40%;
 }
 
 .nav-main__hamburger {
-  width: 200px;
-  background-color: coral;
+  width: 40px;
+  height: 40px;
+  background-image: url("/images/hamburger_menu.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 80%;
   cursor: pointer;
 }
 
 .nav-main a:visited {
   color: black;
+}
+
+.nav-main ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 20px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.nav-main ul li {
+  text-transform: uppercase;
+  padding: 0.5em;
+}
+
+.nav-main__links:nth-child(1) {
+  background-color: #cedaec;
+}
+
+.nav-main__links:nth-child(2) {
+  background-color: #b3ffd9;
+}
+
+.nav-main__links:nth-child(3) {
+  background-color: #ffe6ff;
+}
+
+.nav-main__links:nth-child(4) {
+  background-color: #527a7a;
+}
+
+.nav-main__links:nth-child(5) {
+  background-color: #8a9196;
 }
 /*# sourceMappingURL=style.css.map */

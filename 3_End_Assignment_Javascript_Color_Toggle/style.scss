@@ -16,55 +16,67 @@
 //   background-color: coral;
 // }
 .nav-main {
-  width: 150px;
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  background-color: grey;
+  position: fixed;
   top: 0;
-  left: 0;
+  // left: 0;
+  // display: flex;
+  width: 40px;
+  height: 40%;
+  // background-color: grey;
 
   &__hamburger {
-    width: 200px;
-
-    background-color: coral;
-    // background-image: url("/images/hamburger_menu.png");
+    width: 40px;
+    height: 40px;
+    // background-color: coral;
+    background-image: url("/images/hamburger_menu.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 80%;
     cursor: pointer;
+    // margin: 1em 0em;
   }
   & a:visited {
     color: $colorBlack;
   }
-  // &__links:nth-child(1) {
-  //   background-color: $colorHome;
-  //   padding: 0.5em;
-  // }
-  // &__links:nth-child(2) {
-  //   background-color: $colorAqua;
-  //   padding: 0.5em;
-  // }
-  // &__links:nth-child(3) {
-  //   background-color: $colorBlush;
-  //   padding: 0.5em;
-  // }
-  // &__links:nth-child(4) {
-  //   background-color: $colorSage;
-  //   padding: 0.5em;
-  // }
-  // &__links:nth-child(5) {
-  //   background-color: $colorStone;
-  //   padding: 0.5em;
-  // }
-  // &__home {
-  // }
-  // &__aqua {
-  // }
-  // &__blush {
-  // }
-  // &__sage {
-  // }
-  // &__stone {
-  // }
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    // padding-left: 15px;
+    line-height: 20px;
+    overflow: hidden;
+    visibility: hidden;
+  }
+  & ul li {
+    // display: block;
+    // height: 100%;
+    text-transform: uppercase;
+    padding: 0.5em;
+    // white-space: nowrap;
+  }
+  &__links:nth-child(1) {
+    background-color: $colorHome;
+  }
+  &__links:nth-child(2) {
+    background-color: $colorAqua;
+  }
+  &__links:nth-child(3) {
+    background-color: $colorBlush;
+  }
+  &__links:nth-child(4) {
+    background-color: $colorSage;
+  }
+  &__links:nth-child(5) {
+    background-color: $colorStone;
+  }
+  &__home {
+  }
+  &__aqua {
+  }
+  &__blush {
+  }
+  &__sage {
+  }
+  &__stone {
+  }
 }
