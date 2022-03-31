@@ -24,6 +24,8 @@
   background-position: center;
   background-size: 80%;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-main a:visited {
@@ -48,6 +50,8 @@
 .nav-main ul li {
   text-transform: uppercase;
   padding: 0.5em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-main__links:nth-child(1) {
