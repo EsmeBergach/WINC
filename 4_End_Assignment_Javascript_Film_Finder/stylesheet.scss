@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+* {
+  color: white;
+  font-family: "Raleway", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
+    sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  min-height: 100vh;
+  max-width: 100%;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  margin-top: 1.5em;
+  text-align: center;
+}
+ul.container {
+  display: flex;
+  margin: 2em 1em;
+  justify-content: center;
+}
+li.nav-item {
+  margin: 0 0.5em;
+  padding: 0.2em;
+}
+#category1,
+#category2,
+#category3,
+#category4,
+#category5 {
+  margin-right: 0.5em;
+}
+#movies-ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  grid-gap: 1rem;
+  justify-content: center;
+}
+.movies-item {
+  padding: 1em;
+  cursor: pointer;
+  justify-content: center;
+  margin: auto;
+}
+footer {
+ margin:4em;
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    width: 85%;
+  }
+}

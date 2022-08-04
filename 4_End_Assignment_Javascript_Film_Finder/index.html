@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Film Finder</title>
+  <script defer type="module" src="movies.js"></script>
+  <script defer type="module" src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1> Film Finder </h1>
+  </header>
+  <nav>
+    <ul class="container">
+      <li class="nav-item">
+        <input type="radio" id="category1" name="film-filter" value="film-new" label for="category1">Latest movies, 2014
+        or newer</label>
+      </li>
+      <li class="nav-item">
+        <input type="radio" id="category2" name="film-filter" value="film-avenger" label for="category2">Avenger
+        movies</label>
+      </li>
+      <li class="nav-item">
+        <input type="radio" id="category3" name="film-filter" value="film-xmen" label for="category3">X-men
+        movies</label>
+      </li>
+      <li class="nav-item">
+        <input type="radio" id="category4" name="film-filter" value="film-princess" label for="category4">Princess
+        movies</label>
+      </li>
+      <li class="nav-item">
+        <input type="radio" id="category5" name="film-filter" value="film-batman" label for="category5">Batman
+        movies</label>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div class="movies-container">
+      <ul id="movies-ul">
+      </ul>
+    </div>
+  </main>
+</body>
+<footer></footer>
+</html>
